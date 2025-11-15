@@ -1,6 +1,4 @@
-## **File 3: data.js**
 
-```javascript
 const gameData = {
   words: {
     vi: [
