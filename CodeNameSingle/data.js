@@ -161,10 +161,9 @@ const gameData = {
   translations: {
     vi: {
       gameTitle: "CODENAMES",
-      redFound: "Đỏ đã tìm",
+      cardsFoundLabel: "Từ đã tìm",
       guessesLeft: "Lượt đoán còn lại",
-      timerTotal: "Thời gian tổng",
-      timerTurn: "Thời gian lượt",
+      timerTotal: "Thời gian",
       aiHint: "🤖 Gợi ý từ AI Spymaster",
       btnNewHint: "Gợi ý mới",
       btnEndTurn: "Kết thúc lượt",
@@ -178,19 +177,20 @@ const gameData = {
       loseAssassin: "Bạn đã chọn thẻ Assassin!",
       loseTime: "Hết thời gian! Đội xanh thắng với",
       cardsFound: "thẻ đã tìm được.",
-      hintHistory: "Lịch sử:"
+      hintHistory: "Lịch sử:",
+      noGuessesAlert: "Hết lượt đoán! Nhấn 'Gợi ý mới' hoặc 'Kết thúc lượt'.",
+      btnEndGame: "Kết thúc trò chơi",
     },
     en: {
       gameTitle: "CODENAMES",
-      redFound: "Red Found",
+      cardsFoundLabel: "Cards Found",
       guessesLeft: "Guesses Left",
-      timerTotal: "Total Time",
-      timerTurn: "Turn Time",
+      timerTotal: "Time",
       aiHint: "🤖 AI Spymaster Hint",
       btnNewHint: "New Hint",
-      btnEndTurn: "End Turn",
       btnSpymaster: "Spymaster Mode",
       btnNewGame: "New Game",
+      btnEndGame: "End Game",
       btnPlayAgain: "Play Again",
       youWin: "🎉 YOU WIN!",
       youLose: "💀 YOU LOSE!",
@@ -199,19 +199,19 @@ const gameData = {
       loseAssassin: "You clicked the Assassin!",
       loseTime: "Time's up! Blue team wins with",
       cardsFound: "cards found.",
-      hintHistory: "History:"
+      hintHistory: "History:",
+      noGuessesAlert: "No guesses left! Click 'New Hint' or 'End Turn'."
     },
     fr: {
       gameTitle: "CODENAMES",
-      redFound: "Rouge Trouvé",
+      cardsFoundLabel: "Cartes Trouvées",
       guessesLeft: "Tentatives Restantes",
-      timerTotal: "Temps Total",
-      timerTurn: "Temps du Tour",
+      timerTotal: "Temps",
       aiHint: "🤖 Indice du Maître Espion IA",
       btnNewHint: "Nouvel Indice",
-      btnEndTurn: "Fin du Tour",
       btnSpymaster: "Mode Maître Espion",
       btnNewGame: "Nouveau Jeu",
+      btnEndGame: "Terminer le Jeu",
       btnPlayAgain: "Rejouer",
       youWin: "🎉 VOUS GAGNEZ!",
       youLose: "💀 VOUS PERDEZ!",
@@ -220,13 +220,29 @@ const gameData = {
       loseAssassin: "Vous avez cliqué sur l'Assassin!",
       loseTime: "Temps écoulé! L'équipe bleue gagne avec",
       cardsFound: "cartes trouvées.",
-      hintHistory: "Historique:"
+      hintHistory: "Historique:",
+      noGuessesAlert: "Plus de tentatives! Cliquez sur 'Nouvel Indice' ou 'Fin du Tour'."
     },
     de: {
       gameTitle: "CODENAMES",
-      redFound: "Rot Gefunden",
+      cardsFoundLabel: "Gefundene Karten",
       guessesLeft: "Versuche Übrig",
-      timerTotal: "Gesamtzeit​​​​​​​​​​​​​​​​"
-      },
-   }
+      timerTotal: "Zeit",
+      aiHint: "🤖 KI Spymaster Hinweis",
+      btnNewHint: "Neuer Hinweis",
+      btnSpymaster: "Spymaster Modus",
+      btnNewGame: "Neues Spiel",
+      btnEndGame: "Spiel Beenden",
+      btnPlayAgain: "Nochmal Spielen",
+      youWin: "🎉 SIE GEWINNEN!",
+      youLose: "💀 SIE VERLIEREN!",
+      timeUp: "⏰ ZEIT IST UM!",
+      winMessage: "Sie haben alle roten Karten gefunden!",
+      loseAssassin: "Sie haben den Attentäter angeklickt!",
+      loseTime: "Zeit ist um! Das blaue Team gewinnt mit",
+      cardsFound: "gefundenen Karten.",
+      hintHistory: "Verlauf:",
+      noGuessesAlert: "Keine Versuche mehr! Klicken Sie auf 'Neuer Hinweis' oder 'Runde Beenden'."
+    }
   }
+};

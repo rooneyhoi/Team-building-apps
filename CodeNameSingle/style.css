@@ -66,6 +66,16 @@ h1 {
   transform: translateY(-2px);
 }
 
+.language-selector select:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.language-selector select:disabled:hover {
+  transform: none;
+}
+
 .stats-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -91,16 +101,12 @@ h1 {
   font-weight: 700;
 }
 
-.stat-value.red { 
-  color: #ff6b6b; 
-}
-
-.stat-value.blue { 
-  color: #4ecdc4; 
-}
-
 .stat-value.yellow { 
   color: #ffd93d; 
+}
+
+.stat-value.purple { 
+  color: #b794f6; 
 }
 
 /* AI Hint */
@@ -137,15 +143,18 @@ h1 {
 #game-board {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 15px;
+  gap: 10px;
   margin-bottom: 30px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card {
-  aspect-ratio: 1;
+  aspect-ratio: 2;
   background: rgba(255, 255, 255, 0.95);
-  border-radius: 15px;
-  padding: 20px;
+  border-radius: 12px;
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -170,12 +179,8 @@ h1 {
   color: #fff;
 }
 
-.card.revealed.red {
-  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
-}
-
-.card.revealed.blue {
-  background: linear-gradient(135deg, #4ecdc4 0%, #44a3a0 100%);
+.card.revealed.player {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 .card.revealed.neutral {
@@ -198,12 +203,8 @@ h1 {
   pointer-events: none;
 }
 
-.card.spymaster-mode.red::before {
-  background: #ff6b6b;
-}
-
-.card.spymaster-mode.blue::before {
-  background: #4ecdc4;
+.card.spymaster-mode.player::before {
+  background: #667eea;
 }
 
 .card.spymaster-mode.neutral::before {

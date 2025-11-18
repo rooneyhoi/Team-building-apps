@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Codenames - AI Practice</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div id="app">
@@ -22,20 +22,16 @@
       </div>
       <div class="stats-container">
         <div class="stat-box">
-          <div class="stat-label" id="label-red-found">Đỏ đã tìm</div>
-          <div class="stat-value red"><span id="red-found">0</span>/<span id="red-total">8</span></div>
+          <div class="stat-label" id="label-cards-found">Từ đã tìm</div>
+          <div class="stat-value purple"><span id="cards-found">0</span>/<span id="cards-total">9</span></div>
         </div>
         <div class="stat-box">
           <div class="stat-label" id="label-guesses-left">Lượt đoán còn lại</div>
           <div class="stat-value yellow" id="guesses-left">0</div>
         </div>
         <div class="stat-box">
-          <div class="stat-label" id="label-timer-total">Thời gian tổng</div>
-          <div class="stat-value" id="timer-total">20:00</div>
-        </div>
-        <div class="stat-box">
-          <div class="stat-label" id="label-timer-turn">Thời gian lượt</div>
-          <div class="stat-value" id="timer-turn">2:00</div>
+          <div class="stat-label" id="label-timer-total">Thời gian</div>
+          <div class="stat-value" id="timer-total">1:00</div>
         </div>
       </div>
     </div>
@@ -50,10 +46,10 @@
 
     <div id="controls">
       <div class="controls-row">
-        <button class="btn-primary" id="btn-new-hint">Gợi ý mới</button>
-        <button class="btn-secondary" id="btn-end-turn">Kết thúc lượt</button>
+        <button class="btn-primary" id="btn-new-game">Game mới</button>
+        <button class="btn-secondary" id="btn-new-hint">Gợi ý mới</button>
         <button class="btn-secondary" id="btn-spymaster">Chế độ Spymaster</button>
-        <button class="btn-danger" id="btn-new-game">Game mới</button>
+        <button class="btn-danger" id="btn-end-game">Kết thúc Game</button>
       </div>
     </div>
   </div>
